@@ -248,3 +248,45 @@ ul {
         margin-bottom: 10px;
     }
 }
+
+/* ========================== */
+
+/*        Start Now           */
+
+/* ========================== */
+
+.start-now {
+    width: 100%;
+    height: 300px;
+
+    margin: 250px 0px;
+}
+
+.start-now-container {
+    background-image: url("./assets/start-now-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.start-now-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    place-items: center;
+}
+
+.start-now h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    
+    padding: 10px 50px;
+
+    background-color: lightgray;
+    border-radius: 50px;
+}
