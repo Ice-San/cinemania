@@ -179,6 +179,8 @@ ul {
     margin-bottom: 150px;
     font-weight: bolder;
     font-size: 40px;
+
+    padding-left: 50px; 
 }
 
 .details-box {
@@ -203,11 +205,11 @@ ul {
 }
 
 .see-details-title p {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .see-details-actors h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
@@ -224,27 +226,38 @@ ul {
     margin-right: 5px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1378px) {
+    .see-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.1fr 0.1fr;
+        grid-gap: 50px;
+        place-items: center;
+    }
+    
     .see-details-information {
-        margin-bottom: 150px;
-        margin-left: 9px;
+        font-size: 35px;
 
-        font-weight: bolder;
-        font-size: 30px;
+        grid-row: 1 / 1;
+        grid-column: 1 / 4;
+
+        padding-left: 50px;
+    }
+
+    .details-box, .see-details-in-column, .see-details-actors {
+        grid-row: 2 / 2;
+    }
+    
+    .details-box {
+        margin-left: 50px;
     }
 
     .see-details-title h1 {
-        font-weight: bolder;
-        font-size: 55px;
-        padding-bottom: 20px;
+        font-size: 80px;
     }
     
     .see-details-title p {
         font-size: 30px;
     }
     
-    .see-details-actors h1 {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
 }
