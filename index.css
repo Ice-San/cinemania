@@ -50,12 +50,13 @@ ul {
     justify-content: center;
     flex-direction: column;
 
-    height: 88.5vh;
+    height: 750px;
 }
 
 .apresentation li:first-child {
     font-size: 75px;
     font-weight: bold;
+    text-align: center;
 }
 
 .apresentation li:nth-child(2) {
