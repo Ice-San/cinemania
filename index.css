@@ -10,7 +10,9 @@ body {
 
 header {
     width: 100%;
-    height: auto;
+    height: 935px;
+
+    background-color: rgb(22, 22, 22);
 }
 
 ul {
@@ -31,16 +33,23 @@ ul {
 .logo-login div {
     display: flex;
     justify-content: right;
+    
     width: 100%;
+}
+
+.logo-login a {
+    text-decoration: none;
+    color: white;
 }
 
 .logo-login div li {
     margin-right: 50px;
-    padding: 7px 10px;
+    padding: 7px 20px;
 
-    background-color: lightgrey;
+    
     border-radius: 10px;
-    font-weight: bold;
+    border: lightgrey 1.5px solid;
+    font-weight: 600;
     font-size: 18px;
 }
 
@@ -51,17 +60,53 @@ ul {
     flex-direction: column;
 
     height: 750px;
+
+    color: white;
 }
 
 .apresentation li:first-child {
-    font-size: 75px;
+    font-size: 85px;
     font-weight: bold;
     text-align: center;
+
+    text-shadow: 2px 2px 2px red;
+    animation: textHero 2s linear 0s infinite alternate;
+}
+
+@keyframes textHero {
+    0% {text-shadow: 2px 2px 2px red;}
+    50% {text-shadow: 2px 2px 2px yellow;}
+    100% {text-shadow: 2px 2px 2px red;}
 }
 
 .apresentation li:nth-child(2) {
-    font-size: 35px;
+    font-size: 20px;
 }
+
+@media (max-width: 431px) {
+    .logo-login img {
+        width: 250px;
+        margin: -90px -20px;
+    }
+
+    .logo-login div {
+        margin-top: 30px;
+    }
+
+    .apresentation li:first-child {
+        font-size: 55px;
+    }
+
+    .apresentation li:nth-child(2) {
+        font-size: 18px;
+    }
+}
+
+/* ========================== */
+
+/*      List Explanation      */
+
+/* ========================== */
 
 .list-explanation {
     width: 100%;
