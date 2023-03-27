@@ -119,7 +119,7 @@ ul {
 
 .grid-boxs {
     display: grid;
-    grid-template-rows: repeat(2, 0.1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 0.1fr);
     grid-gap: 20px;
 }
@@ -130,8 +130,36 @@ ul {
     width: 800px;
     height: 820px;
     background-color: lightgray;
-    border: 3px solid rgb(179, 179, 179);
     border-radius: 12px;
+}
+
+.big-box-container {
+    background-image: url("./assets/big-box-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.big-box-overlay {
+    background-color: rgb(0, 0, 0, 0.75);
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+.big-box-overlay p {
+    color: white;
+    font-weight: bold;
+    font-size: 75px;
+    margin-left: 25px;
 }
 
 .box {
@@ -147,8 +175,73 @@ ul {
     width: 500px;
     height: 400px;
     background-color: lightgray;
-    border: 3px solid rgb(179, 179, 179);
     border-radius: 12px;
+}
+
+.box1-container {
+    background-image: url("./assets/favourite-movies-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.box2-container {
+    background-image: url("./assets/movies-want-to-see-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.box3-container {
+    background-image: url("./assets/rewiend-movies-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.box4-container {
+    background-image: url("./assets/friends-movies-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.inside-box-overlay {
+    background-color: rgb(0, 0, 0, 0.75);
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+.inside-box-overlay p {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 25px;
 }
 
 @media (max-width: 1440px) {
@@ -163,8 +256,8 @@ ul {
 
     .grid-boxs {
         display: grid;
-        grid-template-rows: repeat(2, 0.1fr);
-        grid-template-columns: repeat(1, 0.1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
     }
 
@@ -176,7 +269,6 @@ ul {
         height: 45vw;
         min-height: 400px;
         background-color: lightgray;
-        border: 3px solid rgb(179, 179, 179);
         border-radius: 12px; 
     }
 
@@ -188,6 +280,18 @@ ul {
         grid-gap: 20px;
     }
 }
+
+@media (max-width: 669px) {
+    .inside-box-overlay p {
+        font-size: 7vw;
+    }
+}
+
+/* ========================== */
+
+/*        Set Movies          */
+
+/* ========================== */
 
 .set-movie {
     margin: 250px 0px;
@@ -383,13 +487,13 @@ ul {
 
 .start-now {
     width: 100%;
-    height: 300px;
+    height: 500px;
 
     margin: 250px 0px;
 }
 
 .start-now-container {
-    background-image: url("./assets/start-now-banner.jpg");
+    background-image: url("./assets/start-now.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -398,23 +502,47 @@ ul {
     height: 100%;
 }
 
-.start-now-overlay {
+.start-now-content {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.start-now h1 {
+.start-now-content h1 {
+    color: white;
+    font-size: 150px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px red;
+    margin-bottom: 20px;
+}
+
+.start-now-content div {
+    padding: 15px 35px;
+
+    border-radius: 12px;
+    border: rgb(255, 62, 62) 2px solid;
+}
+
+.start-now-content div p {
+    color: white;
     font-size: 30px;
     font-weight: bolder;
-    
-    padding: 10px 50px;
+    cursor: pointer;
+}
 
-    background-color: lightgray;
-    border-radius: 50px;
+.start-now-content div p:hover {
+    transform: scale(1.15);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 780px) {
+    .start-now h1 {
+        font-size: 75px;
+    }
 }
 
 /* ========================== */
