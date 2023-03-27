@@ -519,7 +519,7 @@ ul {
     flex-direction: column;
 }
 
-.start-now h1 {
+.start-now-content h1 {
     color: white;
     font-size: 150px;
     font-weight: bolder;
@@ -534,14 +534,15 @@ ul {
     border: rgb(255, 62, 62) 2px solid;
 }
 
-.start-now p {
+.start-now-content div p {
     color: white;
     font-size: 30px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
-.start-now p:hover {
-    transform: scale(1.25);
+.start-now-content div p:hover {
+    transform: scale(1.15);
     transition: all 0.3s ease-in-out;
 }
 
