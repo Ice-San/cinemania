@@ -281,9 +281,29 @@ ul {
     }
 }
 
-@media (max-width: 669px) {
+@media (max-width: 500px) {
+    .big-box {
+        max-width: 400px;
+        width: 90vw;
+    }
+
+    .big-box-overlay p {
+        font-size: 65px;
+    }
+
+    .box {
+        max-width: 400px;
+        width: 90vw;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+    .inside-box {
+        height: 200px;
+    }
+
     .inside-box-overlay p {
-        font-size: 7vw;
+        font-size: 35px;
     }
 }
 
