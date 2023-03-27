@@ -541,9 +541,9 @@ ul {
     cursor: pointer;
 }
 
-.start-now-content div p:hover {
+.start-now-scale-effect {
     transform: scale(1.15);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 780px) {
