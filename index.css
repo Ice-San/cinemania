@@ -10,7 +10,7 @@ body {
 
 header {
     width: 100%;
-    height: 935px;
+    height: 955px;
 
     background-color: rgb(22, 22, 22);
 }
@@ -114,7 +114,7 @@ ul {
 
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 100px 0px;
 }
 
 .grid-boxs {
