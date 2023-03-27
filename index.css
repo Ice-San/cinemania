@@ -10,7 +10,7 @@ body {
 
 header {
     width: 100%;
-    height: 935px;
+    height: 955px;
 
     background-color: rgb(22, 22, 22);
 }
@@ -274,7 +274,7 @@ ul {
         width: 90vw;
         max-width: 900px;
         height: 45vw;
-        min-height: 400px;
+        min-height: 300px;
         background-color: lightgray;
         border-radius: 12px; 
     }
@@ -288,9 +288,29 @@ ul {
     }
 }
 
-@media (max-width: 669px) {
+@media (max-width: 500px) {
+    .big-box {
+        max-width: 400px;
+        width: 90vw;
+    }
+
+    .big-box-overlay p {
+        font-size: 65px;
+    }
+
+    .box {
+        max-width: 400px;
+        width: 90vw;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+    .inside-box {
+        height: 200px;
+    }
+
     .inside-box-overlay p {
-        font-size: 7vw;
+        font-size: 35px;
     }
 }
 
