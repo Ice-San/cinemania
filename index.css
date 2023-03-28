@@ -32,7 +32,7 @@ ul {
     margin-left: 140px;
 }
 
-.logo-login div {
+.logo-login .right {
     display: flex;
     justify-content: right;
     

@@ -12,7 +12,7 @@ const startNowTitle = document.getElementById("start-now-title");
 signin.addEventListener("mouseover", () => {
 
     // Check if contains the reverse animation, if the condution is true it removes them
-    if(signin.classList.contains("start-now-scale-effect-reverse") == true) {
+    if(signin.classList.contains("start-now-scale-effect-reverse")) {
         signin.classList.remove("start-now-scale-effect-reverse");
         startNowTitle.classList.remove("start-now-scale-effect-reverse");
     };
