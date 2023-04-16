@@ -357,6 +357,9 @@ ul {
     display: flex;
     justify-content: right;
     align-items: center;
+
+    padding: 0px 15px;
+    overflow: hidden;
 }
 
 .movies-to-right {
@@ -364,12 +367,12 @@ ul {
     justify-content: left;
     align-items: center;
     grid-gap: 20px;
-    
+
     overflow: hidden;
 }
 
 .movies {
-    min-width: 350px;
+    min-width: 400px;
     height: 600px;
 
     background-color: lightgray;
