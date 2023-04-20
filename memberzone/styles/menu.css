@@ -82,7 +82,7 @@
 }
 
 .menu-options a:hover .menu-boxs p {
-    transform: translateX(10px);
+    transform: translateX(7px);
     transition: all 0.15s ease-in-out;
 }
 
@@ -134,7 +134,7 @@
 .menu-boxs {
     display: flex;
     align-items: center;
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
 .icon {
@@ -203,7 +203,7 @@
     }
 
     .icon {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .menu-logout {
@@ -234,7 +234,7 @@
     }
 
     .logout-icon {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
 }
