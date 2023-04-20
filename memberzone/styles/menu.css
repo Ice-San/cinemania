@@ -1,0 +1,253 @@
+.menu {
+    background-color: rgba(255, 255, 255, 0.3);
+
+    width: 250px;
+    height: 100%;
+}
+
+.menu-elements-position {
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.menu-elements-position a {
+    margin: 10px 0px;
+    margin-right: 15px;
+}
+
+.menu-logo {
+    background-color: black;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    width: 90%;
+    height: 50px;
+}
+
+.menu-logo-container {
+    background-image: url("../../assets/logo-white-render.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220px;
+
+    transform: translateX(-5px);
+    
+    width: 100%;
+    height: 100%;
+}
+
+.menu-logo-container:hover {
+    transform: translateX(0px);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-options {
+    margin-top: 25px;
+    margin-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bold;
+}
+
+.menu-options a {
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    
+    padding: 10px;
+}
+
+.menu-options a:hover {
+    background-color: rgba(255, 202, 88, 0.8);
+    color: white;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-options a:hover .menu-boxs p {
+    transform: translateX(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-logout {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 20px;
+
+    width: 90%;
+    height: 100%;
+}
+
+.logout-button {
+    background-color: #F73859;
+    
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+
+    margin-right: 15px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logout-button a {
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #ED2E4E;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-button .menu-boxs p {
+    color: white;
+    font-weight: bold;
+
+    margin-left: 20px;
+}
+
+.menu-boxs {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.icon-container1 {
+    background-image: url("../../assets/search-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.icon-container2 {
+    background-image: url("../../assets/list-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.icon-container3 {
+    background-image: url("../../assets/account-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.logout-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-container4 {
+    background-image: url("../../assets/logout-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin-left: 15px;
+}
+
+@media (max-width: 1353px) {
+    .menu { 
+        width: 100px;
+    }
+
+    .menu-logo {
+        width: 65px;
+    }
+
+    .menu-elements-position a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-logo-container {
+        background-size: 400px;
+        background-position: -55px center;
+    
+        transform: translateX(-5px);
+
+    }
+
+    .menu-elements-position {
+        margin-left: 0px;
+    }
+    
+    .menu-options a {
+        color: black;
+        text-decoration: none;
+        border-radius: 8px;
+        
+        padding: 10px;
+        margin-left: 5px;
+    }
+
+    .menu-boxs {
+        justify-content: center;
+    }
+
+    .menu-boxs p {
+        display: none;
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+
+    .menu-logout {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        margin-bottom: 20px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .logout-button {     
+        width: 100%;
+        height: 45px;
+        border-radius: 6px;
+    
+        margin-right: 0px;
+        padding-right: 15px;
+    
+        display: flex;
+        align-items: center;
+    }
+
+    .logout-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
