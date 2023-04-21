@@ -1,7 +1,8 @@
 .menu {
     background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
 
-    width: 250px;
+    width: 300px;
     height: 100%;
 }
 
@@ -26,17 +27,18 @@
 
     overflow: hidden;
 
-    width: 90%;
-    height: 50px;
+    width: 95%;
+    height: 75px;
 }
 
 .menu-logo-container {
     background-image: url("../../assets/logo-white-render.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 220px;
+    background-size: 305px;
 
     transform: translateX(-5px);
+    transition: transform 0.1s ease-in-out;
     
     width: 100%;
     height: 100%;
@@ -44,7 +46,7 @@
 
 .menu-logo-container:hover {
     transform: translateX(0px);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .menu-options {
@@ -57,8 +59,12 @@
     font-weight: bold;
 }
 
+.menu-options p {
+    font-size: 25px;
+}
+
 .menu-options a {
-    color: black;
+    color: #111111;
     text-decoration: none;
     border-radius: 8px;
     
@@ -68,13 +74,16 @@
 .menu-options a:hover {
     background-color: rgba(255, 202, 88, 0.8);
     color: white;
+}
 
-    transition: all 0.1s ease-in-out;
+.menu-options a .menu-boxs p {
+    transform: translateX(0px);
+    transition: all 0.15s ease-in-out;
 }
 
 .menu-options a:hover .menu-boxs p {
     transform: translateX(10px);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 .menu-logout {
@@ -87,14 +96,17 @@
     height: 100%;
 }
 
+.menu-logout-position {
+    width: 100%;
+    margin-right: 10px;
+}
+
 .logout-button {
     background-color: #F73859;
     
     width: 100%;
-    height: 35px;
+    height: 45px;
     border-radius: 6px;
-
-    margin-right: 15px;
 
     display: flex;
     justify-content: flex-start;
@@ -108,12 +120,13 @@
 .logout-button:hover {
     background-color: #ED2E4E;
 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .logout-button .menu-boxs p {
     color: white;
     font-weight: bold;
+    font-size: 25px;
 
     margin-left: 20px;
 }
@@ -125,45 +138,15 @@
 }
 
 .icon {
-    font-size: 20px;
-}
-
-.icon-container1 {
-    background-image: url("../../assets/search-icon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 100%;
-}
-
-.icon-container2 {
-    background-image: url("../../assets/list-icon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 100%;
-}
-
-.icon-container3 {
-    background-image: url("../../assets/account-icon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 100%;
+    font-size: 25px;
 }
 
 .logout-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
-.icon-container4 {
+.icon-container {
     background-image: url("../../assets/logout-icon.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,6 +215,10 @@
 
         width: 100%;
         height: 100%;
+    }
+
+    .menu-logout-position {
+        margin-left: 10px;
     }
 
     .logout-button {     
