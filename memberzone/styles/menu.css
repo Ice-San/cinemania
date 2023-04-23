@@ -2,7 +2,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
 
-    width: 300px;
+    width: 400px;
     height: 100%;
 }
 
@@ -28,7 +28,7 @@
     overflow: hidden;
 
     width: 95%;
-    height: 75px;
+    height: 80px;
 }
 
 .menu-logo-container {
@@ -37,7 +37,7 @@
     background-position: center;
     background-size: 305px;
 
-    transform: translateX(-5px);
+    transform: translateX(-15px);
     transition: transform 0.1s ease-in-out;
     
     width: 100%;
@@ -45,7 +45,7 @@
 }
 
 .menu-logo-container:hover {
-    transform: translateX(0px);
+    transform: translateX(-10px);
     transition: all 0.1s ease-in-out;
 }
 
@@ -68,7 +68,7 @@
     text-decoration: none;
     border-radius: 8px;
     
-    padding: 10px;
+    padding: 15px;
 }
 
 .menu-options a:hover {
@@ -105,8 +105,8 @@
     background-color: #F73859;
     
     width: 100%;
-    height: 45px;
-    border-radius: 6px;
+    height: 55px;
+    border-radius: 12px;
 
     display: flex;
     justify-content: flex-start;
