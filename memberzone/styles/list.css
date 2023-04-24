@@ -66,15 +66,15 @@
     color: black;
     font-weight: bold;
 
-    background-color: rgb(255, 255, 106);
+    background-color: rgba(253, 196, 74, 0.8);
     border-radius: 6px;
 
     padding: 10px 25px;
 }
 
 .search-background a:hover {
-    background-color: rgb(255, 255, 55);
-    transition: all 0.2s ease-in-out;
+    background-color: rgba(255, 187, 41, 0.8);
+    transition: all 0.15s ease-in-out;
 }
 
 .list-movies {

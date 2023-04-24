@@ -60,7 +60,7 @@
 }
 
 .menu-options p {
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .menu-options a {
@@ -113,7 +113,7 @@
     align-items: center;
 }
 
-.logout-button a {
+.menu-logout-position a {
     text-decoration: none;
 }
 
@@ -126,7 +126,7 @@
 .logout-button .menu-boxs p {
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 16px;
 
     margin-left: 20px;
 }
@@ -134,16 +134,16 @@
 .menu-boxs {
     display: flex;
     align-items: center;
-    grid-gap: 5px;
+    grid-gap: 15px;
 }
 
 .icon {
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .logout-icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .icon-container {
