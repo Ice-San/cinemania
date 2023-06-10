@@ -85,9 +85,9 @@
     transition: all 0.1s ease-in-out;
 }
 
-.list-film {
-    width: 135px;
-    height: 190px;
+.list1-film {
+    width: 90px;
+    height: 125px;
 }
 
 .list-film-containers-all {
