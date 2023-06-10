@@ -30,11 +30,11 @@
     margin-right: 50px;
 }
 
-.list1-content:first-child {
+.list-content:first-child {
     margin-top: 35px;
 }
 
-.list1-content {
+.list-content {
     background-color: rgba(255, 255, 255, 0.479);
     border-radius: 12px;
     box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
@@ -51,17 +51,17 @@
     transition: all 0.1s ease-in-out;
 }
 
-.list1-content:hover {
+.list-content:hover {
     background-color: rgba(255, 255, 255, 0.557);
     transition: all 0.1s ease-in-out;
 }
 
-.list1-content:hover .list1-flex {
+.list-content:hover .list-flex {
     margin-left: 20px;
     transition: all 0.1s ease-in-out;
 }
 
-.list1-column {
+.list-column {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -70,55 +70,56 @@
     margin-left: 35px;
 }
 
-.list1-column h1 {
+.list-column h1 {
     font-size: 38px;
     color: #1A202C;
 }
 
-.list1-flex {
+.list-flex {
     display: flex;
     gap: 10px;
 
     margin-left: 10px;
-    margin-right: 15px;
     margin-bottom: 15px;
     transition: all 0.1s ease-in-out;
 }
 
-.list1-film {
-    width: 90px;
-    height: 125px;
+.list-film {
+    min-width: 125px;
+    min-height: 200px;
+
+    border-radius: 12px;
+    border: 4.5px solid rgba(175, 133, 26, 0.67);
 }
 
-.list1-film-containers-all {
+.list-film-containers-all {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     
-    border-radius: 12px;
-    border:  4.5px solid rgba(175, 133, 26, 0.67);
+    border-radius: 8px;
 
     width: 100%;
     height: 100%;
 }
 
-.list1-film-container1 {
+.list-film-container1 {
     background-image: url("../../../assets/movie1.jpg");
 }
 
-.list1-film-container2 {
+.list-film-container2 {
     background-image: url("../../../assets/movie2.jpg");
 }
 
-.list1-film-container3 {
+.list-film-container3 {
     background-image: url("../../../assets/movie3.jpg");
 }
 
-.list1-film-container4 {
+.list-film-container4 {
     background-image: url("../../../assets/movie4.jpg");
 }
 
-.list1-film-container5 {
+.list-film-container5 {
     background-image: url("../../../assets/movie1.jpg");
 }
 
@@ -143,7 +144,7 @@
         margin-right: 25px;
     }
 
-    .list1-content {
+    .list-content {
         background-color: rgba(255, 255, 255, 0.479);
         border-radius: 12px;
         box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
@@ -159,9 +160,12 @@
         transition: all 0.1s ease-in-out;
     }
 
-    .list1-flex {
+    .list-flex {
         display: flex;
         gap: 10px;
+
+        padding: 0px 15px;
+        overflow: hidden;
     
         margin-left: 10px;
         margin-right: 25px;
