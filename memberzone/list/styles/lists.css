@@ -41,7 +41,9 @@
 
     width: 90%;
     min-width: 750px;
-    min-height: 300px;
+    min-height: 150px;
+    height: 41.5vh;
+    max-height: 300px;
 
     margin-top: 12px;
     margin-left: 35px;
@@ -96,8 +98,8 @@
     border-radius: 12px;
     border:  4.5px solid rgba(175, 133, 26, 0.67);
 
-    width: 125px;
-    height: 190px;
+    width: 100%;
+    height: 100%;
 }
 
 .list-film-container1 {
@@ -134,11 +136,11 @@
         border-radius: 12px;
         box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
     
-        width: 100%;
-        min-width: 525px;
+        width: 90%;
+        min-width: 370px;
         height: 95%;
     
-        margin-right: 5px;
+        margin-right: 25px;
     }
 
     .list-content {
@@ -146,9 +148,8 @@
         border-radius: 12px;
         box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
     
-        width: 90%;
-        min-width: 450px;
-        height: 300px;
+        width: 85%;
+        min-width: 50px;
 
         overflow: hidden;
     
@@ -166,8 +167,13 @@
         overflow: hidden;
     
         margin-left: 10px;
-        margin-right: 15px;
+        margin-right: 25px;
         margin-bottom: 15px;
         transition: all 0.1s ease-in-out;
+    }
+
+    .list1-film-containers-all {
+        width: 100px;
+        height: 150px;
     }
 }
