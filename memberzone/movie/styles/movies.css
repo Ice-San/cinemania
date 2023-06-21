@@ -110,24 +110,31 @@
     width: 60px;
     height: 60px;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+}
+
+.button-description:hover svg {
+    width: 35px;
+    height: 35px;
+
+    transition: all 0.3s ease-in-out;
 }
 
 svg {
     width: 30px;
     height: 30px;
-}
 
-.btn-container-none {
-    display: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .button-add-film {
-    background-color: #ED2E4E;
+    background-color: #24b956;
 
     border-radius: 8px;
+
+    cursor: pointer;
 
     width: 60px;
     height: 60px;
@@ -135,12 +142,31 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-add-film:hover svg {
+    width: 35px;
+    height: 35px;
 }
 
 .button-add-film-color {
     filter: invert(100%);
 
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-add-film-color {
+    background-color: #ED2E4E;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-add-film-rotate-effect {
     transform: rotate(135deg);
+
+    transition: all 0.3s ease-in-out;
 }
 
 .movie-description {
@@ -191,7 +217,7 @@ svg {
         margin-bottom: 20px;
     }
 
-    .btn-container-none {
+    .button-description {
         display: flex;
     }
 }
