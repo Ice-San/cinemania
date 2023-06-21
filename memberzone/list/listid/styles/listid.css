@@ -44,6 +44,7 @@
 .list-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-top: 25px;
 }
@@ -52,14 +53,14 @@
     display: flex;
     gap: 10px;
 
-    overflow: hidden;
+    overflow: auto;
 
-    max-width: 712px;
+    max-width: 632px;
     width: 100%;
     min-width: 50px;
     height: auto;
 
-    margin-right: 15px;
+    margin-right: 0px;
 }
 
 .movie-list {
@@ -198,7 +199,7 @@ svg {
     font-size: 16px;
 }
 
-@media (max-width: 1083px) {
+@media (max-width: 1022px) {
     .list-name {
         font-size: 23px;
     }
