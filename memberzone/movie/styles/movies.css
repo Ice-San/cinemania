@@ -126,8 +126,7 @@ svg {
     width: 30px;
     height: 30px;
 
-.btn-container-none {
-    display: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .button-add-film {
