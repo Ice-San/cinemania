@@ -1,0 +1,166 @@
+.list {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
+
+    width: 100%;
+    height: 95%;
+
+    overflow: hidden;
+
+    margin-right: 50px;
+}
+
+.list h1 {
+    font-size: 100px;
+    font-weight: bolder;
+
+    margin: 25px 0px 0px 25px;
+}
+
+.search-background {
+    margin: 25px 0px 0px 25px;
+    
+    background-color: rgb(148, 148, 148, 0.5);
+    border-radius: 8px;
+
+    width: 75%;
+    max-width: 800px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-background form {
+    width: 85%;
+    height: 40px;
+}
+
+.search-background input {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: transparent;
+
+    background-color: rgba(110, 110, 110, 0.5);
+
+    margin-left: 5px;
+    padding-left: 15px;
+    
+    font-size: 20px;
+}
+
+.search-background input:hover {
+    border: 1px white solid;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-background input:focus {
+    outline: none;
+    border: 3px rgb(53, 157, 255) solid;
+}
+
+.search-background a {
+    margin-left: 10px;
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    background-color: rgba(253, 196, 74, 0.8);
+    border-radius: 6px;
+
+    padding: 10px 25px;
+}
+
+.search-background a:hover {
+    background-color: rgba(255, 187, 41, 0.8);
+    transition: all 0.15s ease-in-out;
+}
+
+.list-movies {
+    margin: 50px 0px 0px 25px;
+
+    width: 95%;
+    height: 50vh;
+    max-height: 90vh;
+
+
+    overflow: auto;
+}
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 25px;
+}
+
+.movies {
+    min-width: 180px;
+    min-height: 280px;
+
+    width: 10vw;
+    height: 15vw;
+
+    border: 4.5px solid rgb(175, 133, 26, 0.67);
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+.movie-container {
+    background-image: url("../../assets/movie1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 823px) {
+    .list {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        box-shadow: 5px 5px 15px 0px black;
+    
+        width: 100%;
+        height: 90%;
+    
+        margin-right: 20px;
+    }
+
+    .list h1 {
+        font-size: 50px;
+        font-weight: bolder;
+    
+        margin: 25px 0px 0px 25px;
+    }
+
+    .search-background {
+        width: 86%;
+    }
+
+    .search-background form {
+        width: 95%;
+        height: 40px;
+    }
+
+    .search-background a {
+        margin: 0px 10px;
+    
+        padding: 10px 10px;
+    }
+
+    .movies {
+        width: 100px;
+        height: 175px;
+    
+        border: 4.5px solid rgb(175, 133, 26, 0.67);
+        border-radius: 8px;
+    
+        margin-bottom: 25px;
+    }
+}

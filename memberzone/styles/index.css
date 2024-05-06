@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+}
+
+.background-container {
+    background-image: url("../../assets/memberzone-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.background-blur {
+    background-color: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+@media (max-width: 823px) {
+    .background-blur {
+        grid-gap: 25px;
+    }
+}
